@@ -1,5 +1,5 @@
-require_relative 'lib/console_interface'
-require_relative 'lib/game'
+require_relative "lib/console_interface"
+require_relative "lib/game"
 
 puts "Всем привет!"
 
@@ -12,5 +12,4 @@ until game.over?
   letter = console_interface.get_input
   game.play!(letter)
 end
-
 console_interface.print_out
